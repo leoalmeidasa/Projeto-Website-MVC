@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="<?= theme("/assets/css/styles.css"); ?>"/>
     <link rel="stylesheet" href="<?= theme( "/assets/css/boot.css"); ?>"/>
     <link rel="stylesheet" href="<?= theme("/assets/css/style.css"); ?>"/>
-    <?= $v->section("styles"); ?>
 </head>
 <body>
 
