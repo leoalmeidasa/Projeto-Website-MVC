@@ -22,7 +22,7 @@ CoffeeCode é um conjunto de pequenos e otimizados componentes PHP para tarefas 
 ### Highlights
 
 - Simple composer for dynamic data (Compositor simples para dados dinâmicos)
-- Author and publisher settings for Facebook (Configuração de autor e publicador para Facebook)
+- Author and publisher settings for Facebook and Google Plus (Configuração de autor e publicador para Facebook e Google Plus)
 - Quickly configure TwitterCard data for sharing cards (Configure rapidamente os dados TwitterCard para cartões de compartilhamento)
 - Quickly configure OpenGraph data for social sharing. (Configure rapidamente os dados OpenGraph para compartilhamento social.)
 - Add FacebookAdmins or FacebookAppId and everything is ready (Adiciona FacebookAdmins ou FacebookAppId e tudo fica pronto)
@@ -33,7 +33,7 @@ CoffeeCode é um conjunto de pequenos e otimizados componentes PHP para tarefas 
 Optimizer is available via Composer:
 
 ```bash
-"coffeecode/optimizer": "2.0.*"
+"coffeecode/optimizer": "^1.0"
 ```
 
 or run
@@ -95,7 +95,9 @@ $op = new \CoffeeCode\Optimizer\Optimizer();
 
 echo $op->publisher(
   "upinside",
-  "robsonvleite"
+  "robsonvleite",
+  "107305124528362639842",
+  "103958419096641225872"
 )->render();
 ```
 
@@ -104,6 +106,8 @@ echo $op->publisher(
 ````html
 <meta property="article:publisher" content="https://www.facebook.com/upinside"/>
 <meta property="article:author" content="https://www.facebook.com/robsonvleite"/>
+<link rel="publisher" href="https://plus.google.com/107305124528362639842"/>
+<link rel="author" href="https://plus.google.com/103958419096641225872"/>
 ````
 
 #### @twitterCard

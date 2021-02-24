@@ -18,18 +18,13 @@ class Optimizer extends MetaTags
      * @param bool $follow
      * @return Optimizer
      */
-    public function optimize(
-        string $title,
-        string $description,
-        string $url,
-        string $image,
-        bool $follow = true
-    ): Optimizer {
+    public function optimize(string $title, string $description, string $url, string $image, bool $follow = true): Optimizer
+    {
         $this->data($title, $description, $url, $image);
 
         $title = $this->filter($title);
         $description = $this->filter($description);
-
+        
         $this->buildTag("title", $title);
         $this->buildMeta("name", ["description" => $description]);
         $this->buildMeta("name", ["robots" => ($follow ? "index, follow" : "noindex, nofollow")]);
@@ -56,19 +51,24 @@ class Optimizer extends MetaTags
 
     /**
      * @param string $fbPage
-     * @param string|null $fbAuthor
+     * @param string $fbAuthor
+     * @param string $plusPage
+     * @param string|null $plusAuthor
      * @return Optimizer
      */
-    public function publisher(string $fbPage, string $fbAuthor = null): Optimizer
+    public function publisher(string $fbPage, string $fbAuthor, string $plusPage, string $plusAuthor = null): Optimizer
     {
         $this->buildMeta("property", [
+            "article:author" => "https://www.facebook.com/{$fbAuthor}",
             "article:publisher" => "https://www.facebook.com/{$fbPage}"
         ]);
 
-        if ($fbAuthor) {
-            $this->buildMeta("property", [
-                "article:author" => "https://www.facebook.com/{$fbAuthor}"
-            ]);
+        if ($plusAuthor) {
+            $this->buildLink("author", "https://plus.google.com/{$plusAuthor}");
+        }
+
+        if ($plusPage) {
+            $this->buildLink("publisher", "https://plus.google.com/{$plusPage}");
         }
 
         return $this;
@@ -117,8 +117,6 @@ class Optimizer extends MetaTags
     }
 
     /**
-     * Você deve usar UM ou OUTRO, se for usar $appid deixe o $admins em null.
-     * Mas se for usar $admins, então deixe o $appid em null.
      * @param string|null $appId
      * @param array|null $admins
      * @return Optimizer
@@ -129,15 +127,14 @@ class Optimizer extends MetaTags
             $fb = $this->meta->addChild("meta");
             $fb->addAttribute("property", "fb:app_id");
             $fb->addAttribute("content", $appId);
+
             return $this;
         }
 
-        if (!empty($admins) && is_array($admins)) {
-            foreach ($admins as $admin) {
-                $fb = $this->meta->addChild("meta");
-                $fb->addAttribute("property", "fb:admins");
-                $fb->addAttribute("content", $admin);
-            }
+        foreach ($admins as $admin) {
+            $fb = $this->meta->addChild("meta");
+            $fb->addAttribute("property", "fb:admins");
+            $fb->addAttribute("content", $admin);
         }
 
         return $this;

@@ -35,14 +35,23 @@ private static $installed = array (
   ),
   'versions' => 
   array (
-    'coffeecode/optimizer' => 
+    'coffeecode/cropper' => 
     array (
-      'pretty_version' => '2.0.1',
-      'version' => '2.0.1.0',
+      'pretty_version' => '1.3.1',
+      'version' => '1.3.1.0',
       'aliases' => 
       array (
       ),
-      'reference' => '6379bc47072e3e5d6354d51c5731ecab860804f3',
+      'reference' => 'ecc9a275d1cbb4117ab52233f298f4c4b85de71a',
+    ),
+    'coffeecode/optimizer' => 
+    array (
+      'pretty_version' => '1.0.2',
+      'version' => '1.0.2.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '23d3a65cc8210ce6febec4701a5108cdf8b4674b',
     ),
     'coffeecode/paginator' => 
     array (
@@ -62,6 +71,15 @@ private static $installed = array (
       ),
       'reference' => 'e3b94f72bc389e8b97d82a0fd0e5bff743e51667',
     ),
+    'coffeecode/uploader' => 
+    array (
+      'pretty_version' => '1.0.10',
+      'version' => '1.0.10.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '1fd58f13d41de26be36bef9fcebe54b865f3380e',
+    ),
     'league/plates' => 
     array (
       'pretty_version' => 'v4.0.0-alpha',
@@ -73,21 +91,48 @@ private static $installed = array (
     ),
     'matthiasmullie/minify' => 
     array (
-      'pretty_version' => '1.3.0',
-      'version' => '1.3.0.0',
+      'pretty_version' => '1.3.66',
+      'version' => '1.3.66.0',
       'aliases' => 
       array (
       ),
-      'reference' => '3135b0fcb241217cb1826d3ddaf426c8fc14bc4d',
+      'reference' => '45fd3b0f1dfa2c965857c6d4a470bea52adc31a6',
+    ),
+    'matthiasmullie/path-converter' => 
+    array (
+      'pretty_version' => '1.1.3',
+      'version' => '1.1.3.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'e7d13b2c7e2f2268e1424aaed02085518afa02d9',
     ),
     'phpmailer/phpmailer' => 
     array (
-      'pretty_version' => 'v6.2.0',
-      'version' => '6.2.0.0',
+      'pretty_version' => 'v6.3.0',
+      'version' => '6.3.0.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'e38888a75c070304ca5514197d4847a59a5c853f',
+      'reference' => '4a08cf4cdd2c38d12ee2b9fa69e5d235f37a6dcb',
+    ),
+    'rosell-dk/image-mime-type-guesser' => 
+    array (
+      'pretty_version' => '0.3',
+      'version' => '0.3.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '204fd61ca81e3b0ba46c6165dab8f74816b1fe99',
+    ),
+    'rosell-dk/webp-convert' => 
+    array (
+      'pretty_version' => '2.3.2',
+      'version' => '2.3.2.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '5da7989e87cc0b6c61a5fd73262ed28999be27ab',
     ),
     'upinside/fsphp' => 
     array (

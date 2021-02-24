@@ -15,13 +15,11 @@ delete
 export
 import
 public
-return
 static
 typeof
 extends
 package
 private
-continue
 function
 protected
 implements

@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit4c2a3f96143293bb4db673b95b585709
+class ComposerStaticInit7d4333adec6f26d1af99ef9ac9bc6c2b
 {
     public static $files = array (
         'e471bf351add62873bc0289ccd6a937f' => __DIR__ . '/..' . '/league/plates/src/Template/match.php',
@@ -15,12 +15,16 @@ class ComposerStaticInit4c2a3f96143293bb4db673b95b585709
         'bdc465a053da7f7ddb072631f6d41d45' => __DIR__ . '/..' . '/league/plates/src/Extension/LayoutSections/layout-sections.php',
         'afa76803f24616d7599be3b7b0846adc' => __DIR__ . '/..' . '/league/plates/src/Extension/Folders/folders.php',
         '16c5be35e32c6cf916d875518b909210' => __DIR__ . '/..' . '/league/plates/src/Util/util.php',
-        '55fb336536ae5bc31a7b01dce8d1b0c7' => __DIR__ . '/../..' . '/source/Support/Config.php',
-        'aca327319da60b4dfe47e4ecc58b9ec7' => __DIR__ . '/../..' . '/source/Support/Helpers.php',
-        'e86c975ba76d39ec5e93cb856cf95239' => __DIR__ . '/../..' . '/source/Support/MInify.php',
+        '44ef1d8ec27ad01e41d8f15ce932b11b' => __DIR__ . '/../..' . '/source/Boot/Config.php',
+        '05de05ae944629deebff09b1e7131018' => __DIR__ . '/../..' . '/source/Boot/Helpers.php',
+        'a5cccdecb2f40aa7204a65356dcba09d' => __DIR__ . '/../..' . '/source/Boot/Minify.php',
     );
 
     public static $prefixLengthsPsr4 = array (
+        'W' => 
+        array (
+            'WebPConvert\\' => 12,
+        ),
         'S' => 
         array (
             'Source\\' => 7,
@@ -29,19 +33,34 @@ class ComposerStaticInit4c2a3f96143293bb4db673b95b585709
         array (
             'PHPMailer\\PHPMailer\\' => 20,
         ),
+        'M' => 
+        array (
+            'MatthiasMullie\\PathConverter\\' => 29,
+            'MatthiasMullie\\Minify\\' => 22,
+        ),
         'L' => 
         array (
             'League\\Plates\\' => 14,
         ),
+        'I' => 
+        array (
+            'ImageMimeTypeGuesser\\' => 21,
+        ),
         'C' => 
         array (
+            'CoffeeCode\\Uploader\\' => 20,
             'CoffeeCode\\Router\\' => 18,
             'CoffeeCode\\Paginator\\' => 21,
             'CoffeeCode\\Optimizer\\' => 21,
+            'CoffeeCode\\Cropper\\' => 19,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
+        'WebPConvert\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/rosell-dk/webp-convert/src',
+        ),
         'Source\\' => 
         array (
             0 => __DIR__ . '/../..' . '/source',
@@ -50,9 +69,25 @@ class ComposerStaticInit4c2a3f96143293bb4db673b95b585709
         array (
             0 => __DIR__ . '/..' . '/phpmailer/phpmailer/src',
         ),
+        'MatthiasMullie\\PathConverter\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/matthiasmullie/path-converter/src',
+        ),
+        'MatthiasMullie\\Minify\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/matthiasmullie/minify/src',
+        ),
         'League\\Plates\\' => 
         array (
             0 => __DIR__ . '/..' . '/league/plates/src',
+        ),
+        'ImageMimeTypeGuesser\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/rosell-dk/image-mime-type-guesser/src',
+        ),
+        'CoffeeCode\\Uploader\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/coffeecode/uploader/src',
         ),
         'CoffeeCode\\Router\\' => 
         array (
@@ -66,24 +101,22 @@ class ComposerStaticInit4c2a3f96143293bb4db673b95b585709
         array (
             0 => __DIR__ . '/..' . '/coffeecode/optimizer/src',
         ),
+        'CoffeeCode\\Cropper\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/coffeecode/cropper/src',
+        ),
     );
 
     public static $classMap = array (
-        'CSSTest' => __DIR__ . '/..' . '/matthiasmullie/minify/tests/CSSTest.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
-        'JSTest' => __DIR__ . '/..' . '/matthiasmullie/minify/tests/JSTest.php',
-        'MatthiasMullie\\Minify\\CSS' => __DIR__ . '/..' . '/matthiasmullie/minify/CSS.php',
-        'MatthiasMullie\\Minify\\Exception' => __DIR__ . '/..' . '/matthiasmullie/minify/Exception.php',
-        'MatthiasMullie\\Minify\\JS' => __DIR__ . '/..' . '/matthiasmullie/minify/JS.php',
-        'MatthiasMullie\\Minify\\Minify' => __DIR__ . '/..' . '/matthiasmullie/minify/Minify.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit4c2a3f96143293bb4db673b95b585709::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit4c2a3f96143293bb4db673b95b585709::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit4c2a3f96143293bb4db673b95b585709::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit7d4333adec6f26d1af99ef9ac9bc6c2b::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit7d4333adec6f26d1af99ef9ac9bc6c2b::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit7d4333adec6f26d1af99ef9ac9bc6c2b::$classMap;
 
         }, null, ClassLoader::class);
     }

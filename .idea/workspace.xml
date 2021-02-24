@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8174fc84-5389-4349-9135-5d5235d0f7ea" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution>
+      <phar pharPath="$PROJECT_DIR$/composer.phar" interpreterId="52c54368-ffc1-4375-847b-abc537df185f" />
+    </execution>
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/rosell-dk/webp-convert" />
+      <path value="$PROJECT_DIR$/vendor/rosell-dk/image-mime-type-guesser" />
+      <path value="$PROJECT_DIR$/vendor/phpmailer/phpmailer" />
+      <path value="$PROJECT_DIR$/vendor/league/plates" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/coffeecode/paginator" />
+      <path value="$PROJECT_DIR$/vendor/coffeecode/optimizer" />
+      <path value="$PROJECT_DIR$/vendor/coffeecode/cropper" />
+      <path value="$PROJECT_DIR$/vendor/coffeecode/uploader" />
+      <path value="$PROJECT_DIR$/vendor/coffeecode/router" />
+      <path value="$PROJECT_DIR$/vendor/matthiasmullie/path-converter" />
+      <path value="$PROJECT_DIR$/vendor/matthiasmullie/minify" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1oLD8xX1MsYaBrkAvo7HFVTZJWg" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/source/Boot" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="ReaderModeSettings">
+    <option name="enabled" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/source/Boot" />
+      <recent name="$PROJECT_DIR$/themes/cafecontrol" />
+      <recent name="$PROJECT_DIR$/themes/cafecontrol/__template" />
+      <recent name="$PROJECT_DIR$/themes/cafecontrol/assets/css" />
+      <recent name="$PROJECT_DIR$/themes/cafecontrol/views" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/source/Boot" />
+      <recent name="$PROJECT_DIR$/shared/scripts" />
+      <recent name="$PROJECT_DIR$/shared/styles" />
+      <recent name="$PROJECT_DIR$/themes/cafecontrol" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8174fc84-5389-4349-9135-5d5235d0f7ea" name="Default Changelist" comment="" />
+      <created>1613056821512</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1613056821512</updated>
+      <workItem from="1613056822716" duration="1946000" />
+      <workItem from="1613068957913" duration="7731000" />
+      <workItem from="1613146326014" duration="5984000" />
+      <workItem from="1613315619764" duration="8415000" />
+      <workItem from="1613339361010" duration="1288000" />
+      <workItem from="1613342529715" duration="44000" />
+      <workItem from="1613418201482" duration="2899000" />
+      <workItem from="1613421147440" duration="87000" />
+      <workItem from="1613421287730" duration="1345000" />
+      <workItem from="1614020960790" duration="1134000" />
+      <workItem from="1614022313000" duration="67000" />
+      <workItem from="1614022475323" duration="7502000" />
+      <workItem from="1614106152348" duration="9142000" />
+      <workItem from="1614174304206" duration="2160000" />
+      <workItem from="1614188373803" duration="3752000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

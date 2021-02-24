@@ -12,6 +12,7 @@ use Source\Support\Seo;
  */
 class Controller
 {
+
     /** @var View */
     protected $view;
 
@@ -22,10 +23,9 @@ class Controller
      * Controller constructor.
      * @param string|null $pathToViews
      */
-    public function __construct(string $pathToViews =  null)
+    public function __construct(string $pathToViews = null)
     {
         $this->view = new View($pathToViews);
         $this->seo = new Seo();
     }
-
 }
