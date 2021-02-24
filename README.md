@@ -1,3 +1,4 @@
 # Projeto-Website-MVC
-# Sem conexão com banco de dados !
-# Apenas transições !
+
+- COnexão com banco de dados, atentar em mudar o local, caso seja necessário senha de acesso ao mesmo !
+- Trnasições de todas as funções do site funcionando !
